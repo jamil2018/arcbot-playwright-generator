@@ -18,17 +18,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={[inter.className, "mx-8", "m-auto"].join(" ")}>
+      <body className={inter.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex justify-end align-middle py-4">
+          <div className="flex justify-end align-middle py-4 container">
             <ModeToggle />
           </div>
-          {children}
+          <main className="container">{children}</main>
         </ThemeProvider>
       </body>
     </html>
