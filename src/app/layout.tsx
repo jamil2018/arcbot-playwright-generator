@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "@/components/ui/theme-toggler";
+import Navbar from "@/components/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,9 +26,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex justify-end align-middle py-4 container">
-            <ModeToggle />
-          </div>
+          <Navbar />
           <main className="container">{children}</main>
         </ThemeProvider>
       </body>
