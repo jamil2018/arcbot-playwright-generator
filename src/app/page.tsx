@@ -1,12 +1,8 @@
 import InfoDeck from "@/components/info-deck";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-} from "@/components/ui/card";
+import { GET } from "./api/locators/count/route";
 
-export default function Dashboard() {
+export default async function Dashboard() {
+  const count = await GET();
   return (
     <div>
       <h1 className="font-bold text-4xl mb-6">Dashboard</h1>
@@ -15,7 +11,7 @@ export default function Dashboard() {
           {
             title: "Selectors",
             description: "Total added selectors",
-            value: 125,
+            value: count,
           },
           {
             title: "Steps",
