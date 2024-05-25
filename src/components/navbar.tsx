@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ModeToggle } from "./ui/theme-toggler";
-import NavLinks from "./navlink";
+import NavLinks from "./navlinks";
 
 export default function Navbar() {
   return (
@@ -20,6 +20,7 @@ export default function Navbar() {
               { href: "/steps", text: "Steps" },
               { href: "/templates", text: "Templates" },
               { href: "/tests", text: "Tests" },
+              { href: "/locators", text: "Locators" },
             ]}
           />
         </div>
