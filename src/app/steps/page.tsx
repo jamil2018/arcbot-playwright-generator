@@ -1,7 +1,9 @@
+import PageTitle from "@/components/page-title";
+
 export default function Steps() {
   return (
     <div>
-      <h1 className="font-bold text-4xl">Steps</h1>
+      <PageTitle>Steps</PageTitle>
     </div>
   );
 }

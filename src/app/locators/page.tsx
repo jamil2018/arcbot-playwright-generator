@@ -1,11 +1,13 @@
+import { DataTable } from "@/components/data-table";
+import PageDescription from "@/components/page-description";
+import PageTitle from "@/components/page-title";
+
 export default function Locators() {
   return (
     <div>
-      <h1>Locators</h1>
-      <p>
-        Locators are used to find elements on a web page. They are used in
-        automated testing to simulate user interactions with the web page.
-      </p>
+      <PageTitle>Locators</PageTitle>
+      <PageDescription>Total number of locators added till now</PageDescription>
+      <DataTable />
     </div>
   );
 }

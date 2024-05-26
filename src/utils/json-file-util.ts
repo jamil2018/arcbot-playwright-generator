@@ -1,7 +1,7 @@
 import { JSONFile } from "@/types/JSONFile";
 import { glob } from "glob";
 import path from "path";
-import { readFileContent } from "./file.util";
+import { readFileContent } from "./file-util";
 import { JSONFileSignature } from "@/constants/fileSignature";
 
 export const getFileDirectories = async (directory: string) => {
@@ -37,7 +37,11 @@ export const getTotalNumberOfKeysInAllJsonFiles = async (directory: string) => {
 };
 
 export const getAllJsonFileContentInDirectory = async (directory: string) => {
-  const files = await getFileDirectories(directory + JSONFileSignature);
+  const sanitizedDirectory = (directory + JSONFileSignature).replace(
+    /\\/g,
+    "/"
+  );
+  const files = await getFileDirectories(sanitizedDirectory);
   const jsonFiles: JSONFile = {};
   await Promise.all(
     files.map(async (file) => {

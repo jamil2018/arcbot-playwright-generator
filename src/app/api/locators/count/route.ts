@@ -1,4 +1,4 @@
-import { getTotalNumberOfKeysInAllJsonFiles } from "@/utils/jsonFile.util";
+import { getTotalNumberOfKeysInAllJsonFiles } from "@/utils/json-file-util";
 import { getFullFilePath } from "@/utils/path.util";
 
 export async function GET() {

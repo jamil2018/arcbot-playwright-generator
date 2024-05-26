@@ -1,6 +1,6 @@
 {
-  "property1": "value1",
-  "property2": "value2",
-  "property3": "value3",
-  "property4": "value4"
+  "customerProperty1": "value1",
+  "customerProperty2": "value2",
+  "customerProperty3": "value3",
+  "customerProperty4": "value4"
 }
