@@ -1,12 +1,9 @@
 import InfoDeck from "@/components/info-deck";
 import { GET } from "./api/locators/count/route";
-import { GET as getLocatorList } from "./api/locators/route";
 import PageTitle from "@/components/page-title";
 
 export default async function Dashboard() {
   const count = await GET();
-  const locators = await getLocatorList();
-  console.log(locators);
   return (
     <div>
       <PageTitle className="mb-6">Dashboard</PageTitle>
