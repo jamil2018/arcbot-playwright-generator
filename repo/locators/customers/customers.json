@@ -1,6 +1,5 @@
 {
-  "customerProperty1": "value1",
-  "customerProperty2": "value2",
-  "customerProperty3": "value3",
-  "customerProperty4": "value4"
+  "customer1": "John Doe",
+  "customer2": "Jane Doe",
+  "customer3": "Jim Doe"
 }

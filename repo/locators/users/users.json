@@ -1,6 +1,4 @@
 {
-  "userProperty1": "value1",
-  "userProperty2": "value2",
-  "userProperty3": "value3",
-  "userProperty4": "value4"
+  "user1": "password1",
+  "user2": "password2"
 }
